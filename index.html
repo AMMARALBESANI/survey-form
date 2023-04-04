@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title"> Survey Form</h1>
+<p id="description"> Thank you for taking the time to help us improve the platform</p>
+
+<form id="survey-form">
+ <fieldset class="first">
+  <label for="name" id="name-label"> Name <input type="text" id="name" required placeholder="enter your name"/>
+  </label>
+
+
+  
+  <label for="email" id="email-label"> Email<input type="email" id="email" required placeholder="enter your email"/></label>
+
+ <label  for="number" id="number-label"> Age<input type="number" id="number"placeholder="age" min=17
+ max=100 /></label>
+
+</fieldset>
+
+<fieldset>
+  <legend>Year of experience</legend>
+  <label for="dropdown">
+   <select id="dropdown">
+   <option value="">my experience</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">more than 3</option>
+ </select>
+ </label>
+ </fieldset>
+
+ <fieldset class="recom">
+   <!-- <label> -->
+    <legend>Would you recommend freeCodeCamp to a friend?</legend>  
+    <label for="defiantly" ><input type="radio" value="defiantly" name="recommend" id=""defiantly />defiantly</label>
+ <label for="maybe"><input type="radio" value="maybe" name="recommend" id="maybe"/>maybe</label>
+<label for="not sure"><input type="radio" value="not sure" name="recommend" id="not sure"/>not sure</label>
+
+<!-- </label> -->
+</fieldset>
+
+<fieldset class="major">
+  <legend>Choose your major</legend>
+
+<!-- <label> choose your major -->
+ <label for="front-end"><input type="checkbox" value="front-end" id="front-end" />front-end</label>
+ <label for="back-end"><input type="checkbox" value="back-end" id="back-end" />back-end</label>
+ <label for="videos"><input type="checkbox" value="videos" id="videos" />videos</label>
+
+<!-- </label> -->
+</fieldset>
+
+<fieldset>
+  <legend>Give us your opinion</legend>
+  <label for="comment"><textarea id="comment" type="textarea" >  
+  </textarea></label>
+
+</fieldset>
+
+<input type="submit" id="submit" />
+
+</form>
+    
+</body>
+</html>
